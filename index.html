@@ -22,7 +22,7 @@
       background-color: #fff;
       width: 100%;
       max-width: 700px;
-	  max-height: 600px;
+      max-height: 600px;
       margin: 50px auto;
       padding: 20px;
       border-radius: 10px;
@@ -66,16 +66,6 @@
       }
     }
   </style>
-  <script>
-      function toggleAudio() {
-        var audio = document.getElementById("birthdayAudio");
-        if (audio.paused) {
-          audio.play();
-        } else {
-          audio.pause();
-        }
-      }
-    </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -83,14 +73,13 @@
     <h1>生日快乐，吴老师！</h1>
     <p>亲爱的吴老师，祝您在这特殊的日子里，生日快乐！感谢您长时间以来给我的指导和支持，在您的生日这一天，我衷心祝愿您健康、幸福、快乐，事业蒸蒸日上！</p>
     <p class="signature">诚挚地，您的学生李润波</p>
-    <img src="./11.jpg" alt="生日祝福" width="450px">
-	<br>
-	<audio controls>
-	      <source src="./3076159fcd394b79995c9f833c6bb1f6.mp3" type="audio/mpeg">
-	      Your browser does not support the audio element.
-	 </audio>
-	 <br>
-	 <button onclick="toggleAudio()">播放/暂停音乐</button>
+    <img src="./11.jpg" alt="生日蛋糕" width="350px">
+    <br>
+    <audio id="birthdayAudio" controls style>
+      <source src="./3076159fcd394b79995c9f833c6bb1f6.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+	
   </div>
 </body>
 </html>
